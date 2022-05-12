@@ -1,0 +1,10 @@
+BOARD=nucleo-f207zg IPV4=0 IPV6=1 TRANSPORT_MQTT=1 QOS=2 ENABLE_DEBUG=0 make flash term -j
+
+2022-05-06 16:02:36,352 # heap: 95996 (used 3612, free 92384) [bytes]
+2022-05-06 16:02:37,075 # 	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+2022-05-06 16:02:37,083 # 	  - | isr_stack            | -        - |   - |    512 (  256) (  256) | 0x20000000 | 0x200001c8
+2022-05-06 16:02:37,092 # 	  1 | main                 | running  Q |   7 |   6512 ( 2092) ( 4420) | 0x20000aec | 0x20002244 
+2022-05-06 16:02:37,101 # 	  2 | lwip_netdev_mux      | bl rx    _ |   3 |   6000 (  260) ( 5740) | 0x20005ab8 | 0x20007184 
+2022-05-06 16:02:37,110 # 	  3 | tcpip_thread         | bl mbox  _ |   1 |   6000 (  580) ( 5420) | 0x20002620 | 0x20003c9c 
+2022-05-06 16:02:37,116 # 	    | SUM                  |            |     |  19024 ( 3188) (15836)
+2022-05-06 16:02:37,119 # heap: 95996 (used 1500, free 94496) [bytes]

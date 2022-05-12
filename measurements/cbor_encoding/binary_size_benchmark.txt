@@ -1,0 +1,24 @@
+Empty application:
+    COMPILE_BENCHMARK=1 COMPILE_ENCODER=0 COMPILE_FULL_PARSER=0 COMPILE_PARTIAL_PARSER=0 BOARD=nucleo-f207zg make
+    text	   data	    bss	    dec	    hex	filename
+    6996	    112	   2316	   9424	   24d0	/home/hendrik/Documents/FU-Berlin/RIOT-Projekt/RIOT/examples/cbor_encoding/bin/nucleo-f207zg/cbor-encoding.elf
+
+Encoder only:
+    COMPILE_BENCHMARK=1 COMPILE_ENCODER=1 COMPILE_FULL_PARSER=0 COMPILE_PARTIAL_PARSER=0 BOARD=nucleo-f207zg make
+    text	   data	    bss	    dec	    hex	filename
+    7648	    112	   2316	  10076	   275c	/home/hendrik/Documents/FU-Berlin/RIOT-Projekt/RIOT/examples/cbor_encoding/bin/nucleo-f207zg/cbor-encoding.elf
+
+Full parser only:
+    COMPILE_BENCHMARK=1 COMPILE_ENCODER=0 COMPILE_FULL_PARSER=1 COMPILE_PARTIAL_PARSER=0 BOARD=nucleo-f207zg make
+    text	   data	    bss	    dec	    hex	filename
+    9192	    112	   2320	  11624	   2d68	/home/hendrik/Documents/FU-Berlin/RIOT-Projekt/RIOT/examples/cbor_encoding/bin/nucleo-f207zg/cbor-encoding.elf
+
+Partial parser only:
+    COMPILE_BENCHMARK=1 COMPILE_ENCODER=0 COMPILE_FULL_PARSER=0 COMPILE_PARTIAL_PARSER=1 BOARD=nucleo-f207zg make
+    text	   data	    bss	    dec	    hex	filename
+    8500	    112	   2316	  10928	   2ab0	/home/hendrik/Documents/FU-Berlin/RIOT-Projekt/RIOT/examples/cbor_encoding/bin/nucleo-f207zg/cbor-encoding.elf
+
+Everything included:
+    COMPILE_BENCHMARK=1 COMPILE_ENCODER=1 COMPILE_FULL_PARSER=1 COMPILE_PARTIAL_PARSER=1 BOARD=nucleo-f207zg make
+    text	   data	    bss	    dec	    hex	filename
+    9760	    112	   2320	  12192	   2fa0	/home/hendrik/Documents/FU-Berlin/RIOT-Projekt/RIOT/examples/cbor_encoding/bin/nucleo-f207zg/cbor-encoding.elf
