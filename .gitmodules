@@ -2,3 +2,6 @@
 	path = RIOT
 	url = https://github.com/HendrikVE/RIOT
 	branch = master-thesis
+[submodule "rest-client-translation-middleware"]
+	path = rest-client-translation-middleware
+	url = https://github.com/HendrikVE/rest-client-translation-middleware
